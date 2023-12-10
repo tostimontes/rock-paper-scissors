@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <input type="number" id="roundInput" min="1" max="10" placeholder="Enter number of rounds (1-10)" required>
+    <button id="startButton">Start Game</button>
+    <h3 id="startHeading" style="display: none;">Let's start</h3>
+    <span id="roundCountdown" style="display: none;"></span>
+    
+    <div id="buttonsContainer" style="display: none;">
+        <button id="rock" disabled>Rock</button>
+        <button id="paper" disabled>Paper</button>
+        <button id="scissors" disabled>Scissors</button>
+    </div>
+    
+    <div id="scoreboard" style="display: none;">
+        <p>Player Wins: <span id="playerWins">0</span></p>
+        <p>Computer Wins: <span id="computerWins">0</span></p>
+    </div>
+    
+    <p id="roundResultMessage"></p>
+    
+    <script src="game.js"></script>
+</body>
+</html>

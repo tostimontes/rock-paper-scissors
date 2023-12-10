@@ -31,8 +31,6 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-
-
 let playerWins = 0;
 let computerWins = 0;
 
@@ -50,7 +48,7 @@ function game() {
     }
 }
 
-game();
+// Final result messager
 
 if (playerWins > computerWins) {
     console.log("The winner is the player!");
@@ -59,3 +57,6 @@ if (playerWins > computerWins) {
 } else {
     console.log("It's a tie!");
 }
+
+// Event listeners
+
